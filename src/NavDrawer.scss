@@ -1,0 +1,49 @@
+@import './variables';
+@import '@material/react-drawer/index.scss';
+@import '@material/react-list/index.scss';
+
+.mdc-drawer {
+  box-shadow: 0 16px 38px -12px rgba(0,0,0,.56),0 4px 25px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+  .mdc-drawer__title {
+    color: #003452;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .mdc-list {
+    margin-top: 20px;
+  }
+
+  .mdc-list-item {
+    border-radius: 0;
+    height: 25px;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .mdc-list-item__graphic {
+    color: #355d7e;
+    margin: 10px 0 0 0;
+  }
+  .mdc-list-item--activated {
+    background-color: #355d7e;
+
+    .mdc-list-item__primary-text {
+      color: #ffffff;
+    }
+    .mdc-list-item__secondary-text {
+      color: #efefff;
+    }
+  }
+
+  .mdc-list-item__primary-text {
+    color: #33333e;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+  }
+  .mdc-list-item__secondary-text {
+    color: #77778e;
+    font-size: 0.75rem;
+  }
+}
