@@ -10,25 +10,24 @@ Dashboard para avaliar a evolução dos preços nas compras que realizei.
 
 1. Copiar HTML da #divTelaImpressao do site da NFP
 2. Usar o site http://www.convertcsv.com/html-table-to-csv.htm para converter de HTML para CSV
-3. Tirar a linha do header
-4. Substituir \n^, por , para deixar produtos e preços na mesma linha
-5. Substituir ("[^",]*),([^"]+") por $1.$2 para troca vírgula por ponto
-6. Substituir "X (.+?)" por $1 para troca vírgula por ponto
-7. Executar o script abaixo na pasta 
+3. Salvar o CSV em um arquivo com nome 'ANODACOMPRA-MESDACOMPRA-DIADACOMPRA-NOME-MERCADO.json'
+4. Tirar a linha do header
+5. Substituir \n^, por , para deixar produtos e preços na mesma linha
+6. Substituir ("[^",]*),([^"]+") por $1.$2 para troca vírgula por ponto
+7. Substituir "X (.+?)" por $1 para troca vírgula por ponto
+8. Executar o script abaixo
 
 ```shell
-for file in $(ls); do
-  echo "$file"
-  printf "{\"names\":[" > tmp
-  awk -F ',' '{printf("\"%s\",", $3)}' "$file" >> tmp
-  printf "\"\"],\"values\":[" >> tmp
-  awk -F ',' '{printf("%s,", $6)}' "$file" >> tmp
-  printf "\"\"]}" >> tmp
-  mv tmp "$file"
-done
+file='ANODACOMPRA-MESDACOMPRA-DIADACOMPRA-NOME-MERCADO.json'
+printf "{\"names\":[" > tmp
+awk -F ',' '{printf("\"%s\",", $3)}' "$file" >> tmp
+printf "\"\"],\"values\":[" >> tmp
+awk -F ',' '{printf("%s,", $6)}' "$file" >> tmp
+printf "\"\"]}" >> tmp
+mv tmp "$file"
 ```
 
-8. Copiar arquivos para pasta `src/data`
+9. Copiar arquivo 'ANODACOMPRA-MESDACOMPRA-DIADACOMPRA-NOME-MERCADO.json' para pasta `src/data`
 
 ## Acesso
 
