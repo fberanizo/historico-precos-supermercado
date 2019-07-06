@@ -21,6 +21,7 @@ import j16 from './data/2019-04-27-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j17 from './data/2019-05-08-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j18 from './data/2019-05-22-GOOD-BOM-SUPERMERCADOS-LTDA.json';
 import j19 from './data/2019-06-09-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j20 from './data/2019-06-29-ROFATTO.json';
 
 class Content extends Component {
   state = {  title: '', width: 800, height: 900 };
@@ -49,6 +50,7 @@ class Content extends Component {
       '2019-05-08<br>BIG-BOM': j17,
       '2019-05-22<br>GOOD-BOM': j18,
       '2019-06-09<br>BIG-BOM': j19,
+      '2019-06-09<br>ROFATTO': j20,
     };
     let x = [];
     let y = [];
