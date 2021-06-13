@@ -1,0 +1,16 @@
+name: Build and Deploy
+on:
+  push:
+    branches: [master]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+      - name: Deploy 🚀
+        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "boiling-woodland-38725" # Must be unique in Heroku
+          heroku_email: "fabio.beranizo@gmail.com"
