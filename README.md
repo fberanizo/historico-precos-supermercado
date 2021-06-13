@@ -1,5 +1,7 @@
 # Historico de Preços do Mercado
 
+[![Build and Deploy](https://github.com/fberanizo/historico-precos-mercado/actions/workflows/deploy.yml/badge.svg)](https://github.com/fberanizo/historico-precos-mercado/actions/workflows/deploy.yml)
+
 ----
 
 Dashboard para avaliar a evolução dos preços nas compras que realizei.
