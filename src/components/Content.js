@@ -13,7 +13,7 @@ const Content = () => {
   const { x, y, text } = priceList;
 
   const today = new Date().toISOString().split('T')[0];
-  const max = Math.max(y);
+  const max = Math.max(y) + 1.0;
 
   return (
     <div ref={ref}>
@@ -24,8 +24,8 @@ const Content = () => {
             y: y,
             text: text,
             type: 'scatter',
-            mode: 'lines+points',
-            marker: {color: '#1da1ff'},
+            mode: 'lines+markers',
+            marker: {color: '#1da1ff', size: 14},
           },
         ]}
         layout={{
@@ -72,6 +72,7 @@ const Content = () => {
               color: 'rgb(82, 82, 82)'
             },
             tickformat: '$.2f',
+            tickprefix: 'R',
           },
         }}
       />
