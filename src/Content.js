@@ -23,6 +23,28 @@ import j18 from './data/2019-05-22-GOOD-BOM-SUPERMERCADOS-LTDA.json';
 import j19 from './data/2019-06-09-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j20 from './data/2019-06-29-ROFATTO.json';
 import j21 from './data/2019-07-06-TENDA-ATACADO-LTDA.json';
+import j22 from './data/2019-08-29-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j23 from './data/2019-09-26-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j24 from './data/2019-10-26-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j25 from './data/2019-11-26-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j26 from './data/2019-12-28-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j27 from './data/2020-01-28-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j28 from './data/2020-02-27-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j29 from './data/2020-03-28-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j30 from './data/2020-04-29-SUPERMERCADO-BIG BOM-LTDA.json';
+import j31 from './data/2020-05-29-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j32 from './data/2020-06-26-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j33 from './data/2020-07-23-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j34 from './data/2020-08-29-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j35 from './data/2020-10-15-SUPERMERCADO-BIG BOM-LTDA.json';
+import j36 from './data/2020-11-14-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j37 from './data/2020-12-12-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j38 from './data/2021-01-06-SUPERMERCADO-BIG BOM-LTDA.json';
+import j39 from './data/2021-02-08-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j40 from './data/2021-03-10-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j41 from './data/2021-04-10-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j42 from './data/2021-05-06-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j43 from './data/2021-06-03-SUPERMERCADO-BIG-BOM-LTDA.json';
 
 class Content extends Component {
   state = {  title: '', width: 800, height: 900 };
@@ -53,6 +75,28 @@ class Content extends Component {
       '2019-06-09<br>BIG-BOM': j19,
       '2019-06-09<br>ROFATTO': j20,
       '2019-07-06<br>TENDA': j21,
+      '2019-08-29<br>BIG-BOM': j22,
+      '2019-09-26<br>BIG-BOM': j23,
+      '2019-10-26<br>BIG-BOM': j24,
+      '2019-11-26<br>BIG-BOM': j25,
+      '2019-12-28<br>BIG-BOM': j26,
+      '2020-01-28<br>BIG-BOM': j27,
+      '2020-02-27<br>BIG-BOM': j28,
+      '2020-03-28<br>BIG-BOM': j29,
+      '2020-04-29<br>BIG-BOM': j30,
+      '2020-05-29<br>BIG-BOM': j31,
+      '2020-06-26<br>BIG-BOM': j32,
+      '2020-07-23<br>BIG-BOM': j33,
+      '2020-08-29<br>BIG-BOM': j34,
+      '2020-10-15<br>BIG-BOM': j35,
+      '2020-11-14<br>BIG-BOM': j36,
+      '2020-12-12<br>BIG-BOM': j37,
+      '2021-01-06<br>BIG-BOM': j38,
+      '2021-02-08<br>BIG-BOM': j39,
+      '2021-03-10<br>BIG-BOM': j40,
+      '2021-04-10<br>BIG-BOM': j41,
+      '2021-05-06<br>BIG-BOM': j42,
+      '2021-06-03<br>BIG-BOM': j43,
     };
     let x = [];
     let y = [];
