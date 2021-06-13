@@ -2,14 +2,14 @@ import j0 from '../data/2018-07-20-SUPERMERCADO-PONTO-NOVO-GUACU-LTDA.json';
 import j1 from '../data/2018-08-08-GOOD-BOM-SUPERMERCADOS-LTDA.json';
 import j2 from '../data/2018-09-01-TENDA-ATACADO-LTDA.json';
 import j3 from '../data/2018-10-01-SUPERMERCADO-BIG-BOM-LTDA.json';
-import j4 from '../data/2018-10-06-GOOD-BOM-SUPERMERCADOS-LTDA.json';
+import j4 from '../data/2018-10-05-GOOD-BOM-SUPERMERCADOS-LTDA.json';
 import j5 from '../data/2018-10-06-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j6 from '../data/2018-10-23-TENDA-ATACADO-LTDA.json';
 import j7 from '../data/2018-11-16-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j8 from '../data/2018-11-28-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j9 from '../data/2018-12-21-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j10 from '../data/2018-12-29-SUPERMERCADO-BIG-BOM-LTDA.json';
-import j11 from '../data/2019-01-18-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j11 from '../data/2019-01-17-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j12 from '../data/2019-01-18-TENDA-ATACADO-LTDA.json';
 import j13 from '../data/2019-02-09-GOOD-BOM-SUPERMERCADOS-LTDA.json';
 import j14 from '../data/2019-03-06-TENDA-ATACADO-LTDA.json';
@@ -44,50 +44,50 @@ import j42 from '../data/2021-05-06-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j43 from '../data/2021-06-03-SUPERMERCADO-BIG-BOM-LTDA.json';
 
 const data = {
-  '2018-07-20<br>PONTO-NOVO': j0,
-  '2018-08-08<br>GOOD-BOM': j1,
-  '2018-09-01<br>TENDA': j2,
-  '2018-10-01<br>BIG-BOM': j3,
-  '2018-10-06<br>GOOD-BOM': j4,
-  '2018-10-06<br>BIG-BOM': j5,
-  '2018-10-23<br>TENDA': j6,
-  '2018-11-16<br>BIG-BOM': j7,
-  '2018-11-28<br>BIG-BOM': j8,
-  '2018-12-21<br>BIG-BOM': j9,
-  '2018-12-29<br>BIG-BOM': j10,
-  '2019-01-18<br>BIG-BOM.': j11,
-  '2019-01-18<br>TENDA': j12,
-  '2019-02-09<br>GOOD-BOM': j13,
-  '2019-03-06<br>TENDA': j14,
-  '2019-04-04<br>BIG-BOM': j15,
-  '2019-04-27<br>BIG-BOM': j16,
-  '2019-05-08<br>BIG-BOM': j17,
-  '2019-05-22<br>GOOD-BOM': j18,
-  '2019-06-09<br>BIG-BOM': j19,
-  '2019-06-09<br>ROFATTO': j20,
-  '2019-07-06<br>TENDA': j21,
-  '2019-08-29<br>BIG-BOM': j22,
-  '2019-09-26<br>BIG-BOM': j23,
-  '2019-10-26<br>BIG-BOM': j24,
-  '2019-11-26<br>BIG-BOM': j25,
-  '2019-12-28<br>BIG-BOM': j26,
-  '2020-01-28<br>BIG-BOM': j27,
-  '2020-02-27<br>BIG-BOM': j28,
-  '2020-03-28<br>BIG-BOM': j29,
-  '2020-04-29<br>BIG-BOM': j30,
-  '2020-05-29<br>BIG-BOM': j31,
-  '2020-06-26<br>BIG-BOM': j32,
-  '2020-07-23<br>BIG-BOM': j33,
-  '2020-08-29<br>BIG-BOM': j34,
-  '2020-10-15<br>BIG-BOM': j35,
-  '2020-11-14<br>BIG-BOM': j36,
-  '2020-12-12<br>BIG-BOM': j37,
-  '2021-01-06<br>BIG-BOM': j38,
-  '2021-02-08<br>BIG-BOM': j39,
-  '2021-03-10<br>BIG-BOM': j40,
-  '2021-04-10<br>BIG-BOM': j41,
-  '2021-05-06<br>BIG-BOM': j42,
-  '2021-06-03<br>BIG-BOM': j43,
+  '2018-07-20': j0,
+  '2018-08-08': j1,
+  '2018-09-01': j2,
+  '2018-10-01': j3,
+  '2018-10-05': j4,
+  '2018-10-06': j5,
+  '2018-10-23': j6,
+  '2018-11-16': j7,
+  '2018-11-28': j8,
+  '2018-12-21': j9,
+  '2018-12-29': j10,
+  '2019-01-17': j11,
+  '2019-01-18': j12,
+  '2019-02-09': j13,
+  '2019-03-06': j14,
+  '2019-04-04': j15,
+  '2019-04-27': j16,
+  '2019-05-08': j17,
+  '2019-05-22': j18,
+  '2019-06-09': j19,
+  '2019-06-29': j20,
+  '2019-07-06': j21,
+  '2019-08-29': j22,
+  '2019-09-26': j23,
+  '2019-10-26': j24,
+  '2019-11-26': j25,
+  '2019-12-28': j26,
+  '2020-01-28': j27,
+  '2020-02-27': j28,
+  '2020-03-28': j29,
+  '2020-04-29': j30,
+  '2020-05-29': j31,
+  '2020-06-26': j32,
+  '2020-07-23': j33,
+  '2020-08-29': j34,
+  '2020-10-15': j35,
+  '2020-11-14': j36,
+  '2020-12-12': j37,
+  '2021-01-06': j38,
+  '2021-02-08': j39,
+  '2021-03-10': j40,
+  '2021-04-10': j41,
+  '2021-05-06': j42,
+  '2021-06-03': j43,
 };
 
 export const getPrices = (regex) => {
@@ -97,12 +97,13 @@ export const getPrices = (regex) => {
   for (let entry of Object.entries(data)) {
     for (let i = 0; i < entry[1]['names'].length; i++) {
       if (entry[1]['names'][i].match(regex)) {
-        x.push(entry[1]['values'][i]);
-        y.push(entry[0]);
+        x.push(entry[0]);
+        y.push(entry[1]['values'][i]);
         text.push(entry[1]['names'][i] + "<br>R$" + entry[1]['values'][i]);
         break;
       }
     }
   }
+  console.log(x);
   return {x, y, text};
 };

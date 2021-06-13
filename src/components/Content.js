@@ -8,12 +8,15 @@ const priceListSelector = (reducer) => {
 };
 
 const Content = () => {
-  const { width, height } = useResizeDetector();
+  const { width, height, ref } = useResizeDetector();
   const priceList = useSelector(priceListSelector);
   const { x, y, text } = priceList;
 
+  const today = new Date().toISOString().split('T')[0];
+  const max = Math.max(y);
+
   return (
-    <>
+    <div ref={ref}>
       <Plot
         data={[
           {
@@ -27,7 +30,7 @@ const Content = () => {
         ]}
         layout={{
           width: width - 256 ?? 1000,
-          height: height ?? 1200,
+          height: 1200,
           title: {
             text: '',
             font: {
@@ -37,8 +40,10 @@ const Content = () => {
             },
           },
           xaxis: {
+            range: ['2018-07-01', today],
+            type: 'date',
             title: {
-              text: 'Menor Preço <<<<              >>>> Maior Preço',
+              text: 'Data da Compra',
               font: {
                 family: 'Arial',
                 size: 18,
@@ -50,11 +55,11 @@ const Content = () => {
               size: 12,
               color: 'rgb(82, 82, 82)'
             },
-            tickformat: '$.2f',
           },
           yaxis: {
+            range: [0, max],
             title: {
-              text: '',
+              text: 'Preço',
               font: {
                 family: 'Arial',
                 size: 18,
@@ -66,10 +71,11 @@ const Content = () => {
               size: 12,
               color: 'rgb(82, 82, 82)'
             },
+            tickformat: '$.2f',
           },
         }}
       />
-    </>
+    </div>
   );
 }
 
