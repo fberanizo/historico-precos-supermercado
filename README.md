@@ -30,7 +30,7 @@ mv tmp "$file"
 ```
 
 9. Copiar arquivo 'ANODACOMPRA-MESDACOMPRA-DIADACOMPRA-NOME-MERCADO.json' para pasta `src/data`
-10. Alterar `src/Content.js` para importar o novo arquivo
+10. Alterar `src/services/prices.js` para importar o novo arquivo
 
 ## Acesso
 
