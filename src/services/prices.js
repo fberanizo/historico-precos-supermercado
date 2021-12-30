@@ -48,6 +48,7 @@ import j46 from '../data/2021-08-31-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j47 from '../data/2021-10-02-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j48 from '../data/2021-11-02-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j49 from '../data/2021-11-23-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j50 from '../data/2021-12-27-SUPERMERCADO-BIG-BOM-LTDA.json';
 
 const data = {
   '2018-07-20': j0,
@@ -100,6 +101,7 @@ const data = {
   '2021-10-02': j47,
   '2021-11-02': j48,
   '2021-11-23': j49,
+  '2021-12-27': j50,
 };
 
 export const getPrices = (regex) => {
