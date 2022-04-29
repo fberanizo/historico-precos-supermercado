@@ -1,0 +1,11 @@
+.product {
+  cursor: pointer;
+}
+
+.product:hover {
+  background-color: #eee;
+}
+
+.product.selected {
+  background-color: #ccc;
+}
