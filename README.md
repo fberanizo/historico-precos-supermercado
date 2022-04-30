@@ -20,7 +20,7 @@ Dashboard para avaliar a evolução dos preços nas compras que realizei.
 8. Executar o script abaixo
 
 ```shell
-file='2022-04-01-SUPERMERCADO-BIG-BOM-LTDA.json'
+file='2022-04-28-SUPERMERCADO-BIG-BOM-LTDA.json'
 printf "{\"names\":[" > tmp
 awk -F ',' '{printf("\"%s\",", $3)}' "$file" >> tmp
 printf "\"\"],\"values\":[" >> tmp
