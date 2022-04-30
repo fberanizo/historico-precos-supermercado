@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <Layout>
+    <Layout style={{height:"100vh"}}>
       <Products />
       <Prices />
     </Layout>

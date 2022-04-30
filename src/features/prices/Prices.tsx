@@ -12,8 +12,18 @@ function Prices() {
   const priceList = useAppSelector(priceListSelector);
   const { x, y, text } = priceList;
 
-  const today = new Date().toISOString().split('T')[0];
+  const inAWeek = new Date();
+  inAWeek.setDate(inAWeek.getDate() + 7)
+  const inAWeekStr = inAWeek.toISOString().split('T')[0];
   const max = Math.max(...y) + 1.0;
+
+  if (x.length === 0) {
+    return (
+      <div ref={ref} style={{'alignSelf': 'center', 'flex': '1 1 auto'}}>
+        Clique em um produto para ver o histórico.
+      </div>
+    );
+  }
 
   return (
     <div ref={ref}>
@@ -25,54 +35,64 @@ function Prices() {
             text: text,
             type: 'scatter',
             mode: 'lines+markers',
-            marker: {color: '#1da1ff', size: 14},
+            marker: {color: '#69b3a2', size: 14},
+            line: {
+              color: '#69b3a2',
+              width: 3,
+            }
           },
         ]}
         layout={{
-          width: width! - 256 ?? 1000,
-          height: 1200,
+          width: width! - 328 ?? 1000,
+          height: 960,
           title: {
             text: '',
             font: {
-              family: 'Arial',
+              family: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
               size: 24,
               color: 'rgb(82, 82, 82)'
             },
           },
           xaxis: {
-            range: ['2018-07-01', today],
+            range: ['2018-07-01', inAWeekStr],
             type: 'date',
             title: {
-              text: 'Data da Compra',
+              text: '',
               font: {
-                family: 'Arial',
+                family: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
                 size: 18,
                 color: 'rgb(82, 82, 82)'
               },
             },
             tickfont: {
-              family: 'Arial',
-              size: 12,
+              family: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+              size: 16,
               color: 'rgb(82, 82, 82)'
             },
+            tickangle: 45,
+            tickvals: Array.from(new Set(x)).sort(),
+            tickformat: '%d/%b/%Y',
           },
           yaxis: {
             range: [0, max],
             title: {
-              text: 'Preço',
+              text: '',
               font: {
-                family: 'Arial',
+                family: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
                 size: 18,
                 color: 'rgb(82, 82, 82)',
               },
             },
             tickfont: {
-              family: 'Arial',
-              size: 12,
+              family: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+              size: 16,
               color: 'rgb(82, 82, 82)'
             },
             tickformat: '$.2f',
             tickprefix: 'R',
+            showgrid: true,
+            zeroline: true,
+            showline: true,
           },
         }}
       />
