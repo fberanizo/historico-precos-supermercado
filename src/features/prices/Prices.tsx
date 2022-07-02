@@ -59,6 +59,7 @@ function Prices() {
           },
           xaxis: {
             range: ['2018-07-01', inAWeekStr],
+            fixedrange: true,
             type: 'date',
             title: {
               text: '',
@@ -79,6 +80,7 @@ function Prices() {
           },
           yaxis: {
             range: [0, max],
+            fixedrange: true,
             title: {
               text: '',
               font: {
