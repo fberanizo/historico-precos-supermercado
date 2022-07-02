@@ -3,11 +3,11 @@ import { RootState } from '../../app/store';
 import { fetchPrices } from './pricesAPI';
 
 export interface PricesState {
-  priceList: {x: Array<string>, y: Array<number>, text: Array<string>};
+  priceList: {x: Array<string>, y: Array<number>, text: Array<string>, venues: Array<string>, uniqueVenues: Array<string>};
 }
 
 const initialState: PricesState = {
-  priceList: {x: [], y: [], text: []},
+  priceList: {x: [], y: [], text: [], venues: [], uniqueVenues: []},
 };
 
 export const fetchPricesAsync = createAsyncThunk(
@@ -29,7 +29,7 @@ export const pricesSlice = createSlice({
       state.priceList = payload;
     })
     builder.addCase(fetchPricesAsync.rejected, (state) => {
-      state.priceList = {x: [], y: [], text: []};
+      state.priceList = {x: [], y: [], text: [], venues: [], uniqueVenues: []};
     })
   },
 });

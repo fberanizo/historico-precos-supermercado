@@ -124,16 +124,19 @@ export function fetchPrices(regex: string) {
   let x: Array<string> = [];
   let y: Array<number> = [];
   let text: Array<string> = [];
+  let venues: Array<string> = [];
   for (let entry of Object.entries(data)) {
     for (let i = 0; i < entry[1]['names'].length; i++) {
       if (entry[1]['names'][i].match(regex)) {
         x.push(entry[0]);
         y.push(entry[1]['values'][i] as number);
-        text.push(entry[1]['names'][i] + "<br>R$" + entry[1]['values'][i]);
+        text.push(entry[1]['names'][i] + "<br>R$" + entry[1]['values'][i] + "<br>" + entry[1]['venue']);
+        venues.push(entry[1]['venue']);
         break;
       }
     }
   }
-  console.log(x);
-  return Promise.resolve({data: {x, y, text}});
+
+  let uniqueVenues: Array<string> = Object.values(data).map(d => d['venue']).filter((v, i, a) => a.indexOf(v) === i);
+  return Promise.resolve({data: {x, y, text, venues, uniqueVenues}});
 }
