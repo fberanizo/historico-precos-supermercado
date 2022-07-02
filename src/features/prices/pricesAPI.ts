@@ -55,6 +55,8 @@ import j53 from '../../data/2022-02-25-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j54 from '../../data/2022-04-01-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j55 from '../../data/2022-04-28-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j56 from '../../data/2022-05-30-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j57 from '../../data/2022-06-30-ROLDAO.json';
+import j58 from '../../data/2022-07-10-SUPERMERCADO-BIG-BOM.json';
 
 const data = {
   '2018-07-20': j0,
@@ -114,6 +116,8 @@ const data = {
   '2022-04-01': j54,
   '2022-04-28': j55,
   '2022-05-30': j56,
+  '2022-06-30': j57,
+  '2022-07-10': j58,
 };
 
 export function fetchPrices(regex: string) {
