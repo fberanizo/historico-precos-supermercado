@@ -109,12 +109,12 @@ function Prices() {
 function mode(array: Array<string>) {
   if (array.length === 0) return '#69b3a2';
 
-  var modeMap: any = {},
+  let modeMap: any = {},
     maxEl = array[0],
     maxCount = 1;
 
   for (const element of array) {
-    var el = element;
+    const el = element;
 
     if (modeMap[el] == null) modeMap[el] = 1;
     else modeMap[el]++;
