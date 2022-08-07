@@ -20,7 +20,7 @@ Dashboard para avaliar a evolução dos preços nas compras que realizei.
 8. Executar o script abaixo
 
 ```shell
-file='2022-05-30-SUPERMERCADO-BIG-BOM-LTDA.json'
+file='2022-07-31-PAGUE-MENOS.json'
 printf "{\"names\":[" > tmp
 awk -F ',' '{printf("\"%s\",", $3)}' "$file" >> tmp
 printf "\"\"],\"values\":[" >> tmp
@@ -34,4 +34,4 @@ mv tmp "$file"
 
 ## Acesso
 
-https://boiling-woodland-38725.herokuapp.com
+https://historico-precos-mercado.herokuapp.com/
