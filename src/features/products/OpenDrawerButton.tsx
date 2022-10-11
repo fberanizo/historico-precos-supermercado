@@ -9,7 +9,7 @@ function OpenDrawerButton(props: {visible: boolean, onClick: () => void}) {
   const { onClick } = props;
 
   return visible ? (
-    <Affix style={{ position: 'fixed', bottom: '20px', right: '20px' }}>
+    <Affix style={{ position: 'fixed', top: '20px', right: '20px', zIndex: 1 }}>
       <Button
         type='primary'
         shape='round'

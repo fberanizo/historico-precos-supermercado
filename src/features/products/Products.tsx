@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import { Drawer, List, Typography } from 'antd';
 
@@ -13,11 +13,12 @@ import {
 
 import OpenDrawerButton from './OpenDrawerButton';
 
-function Products() {
+function Products(props: {visible: boolean, setVisible: (visible: boolean) => void}) {
+  const { visible } = props;
+  const { setVisible } = props;
   const productList = useAppSelector(productListSelector);
   const selectedProduct = useAppSelector(selectedProductSelector);
   const dispatch = useAppDispatch();
-  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     dispatch(fetchProductsAsync());
