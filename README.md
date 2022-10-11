@@ -28,6 +28,12 @@ json;
 ```
 3. Copiar output para um arquivo `ANODACOMPRA-MESDACOMPRA-DIADACOMPRA-NOME-MERCADO.json` na pasta `src/data`
 4. Alterar `src/features/prices/priceAPI.ts` para importar o novo arquivo
+5. Adicionar produtos à lista em `src/features/products/productsAPI.ts`
+```js
+var products = "copiar aqui o conteúdo do object com a lista de produtos";
+var isProduct = (item) => products["data"].some(p => item.match(p["regex"]));
+json["names"].filter(i => !isProduct(i));
+```
 
 ## Acesso
 
