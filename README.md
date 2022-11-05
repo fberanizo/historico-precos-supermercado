@@ -37,4 +37,4 @@ json["names"].filter(i => !isProduct(i));
 
 ## Acesso
 
-https://historico-precos-mercado.herokuapp.com/
+https://fberanizo.github.io/historico-precos-mercado/

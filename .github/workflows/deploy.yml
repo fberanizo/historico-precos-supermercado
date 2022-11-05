@@ -2,24 +2,20 @@ name: Build and Deploy
 on:
   push:
     branches: [master]
+permissions:
+  contents: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-      - name: Login to DockerHub 🔑
-        uses: docker/login-action@v2
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build 📦
-        uses: docker/build-push-action@v3
-        with:
-          push: true
-          tags: fberanizo/historico-precos-mercado:latest
-      # The deployment 🚀 is handled by a Heroku webhook
+          folder: build # The folder the action should deploy.
+          branch: gh-pages
