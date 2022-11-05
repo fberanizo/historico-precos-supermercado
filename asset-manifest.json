@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/historico-precos-mercado/static/css/main.a669a035.css",
+    "main.js": "/historico-precos-mercado/static/js/main.17ac8bb2.js",
+    "static/js/787.1ea5d8c2.chunk.js": "/historico-precos-mercado/static/js/787.1ea5d8c2.chunk.js",
+    "index.html": "/historico-precos-mercado/index.html",
+    "main.a669a035.css.map": "/historico-precos-mercado/static/css/main.a669a035.css.map",
+    "main.17ac8bb2.js.map": "/historico-precos-mercado/static/js/main.17ac8bb2.js.map",
+    "787.1ea5d8c2.chunk.js.map": "/historico-precos-mercado/static/js/787.1ea5d8c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a669a035.css",
+    "static/js/main.17ac8bb2.js"
+  ]
+}
