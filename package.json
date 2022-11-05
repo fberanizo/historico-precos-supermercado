@@ -1,6 +1,7 @@
 {
   "name": "historico-precos-mercado",
   "version": "0.1.0",
+  "homepage": "https://fberanizo.github.io/historico-precos-mercado",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
@@ -12,6 +13,7 @@
     "@types/react": "^18.0.16",
     "@types/react-dom": "^18.0.6",
     "antd": "^4.22.3",
+    "gh-pages": "^4.0.0",
     "plotly.js": "^2.13.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,6 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
