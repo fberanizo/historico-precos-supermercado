@@ -1,7 +1,7 @@
 {
-  "name": "historico-precos-mercado",
+  "name": "historico-precos-supermercado",
   "version": "0.1.0",
-  "homepage": "https://fberanizo.github.io/historico-precos-mercado",
+  "homepage": "https://fberanizo.github.io/historico-precos-supermercado",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",

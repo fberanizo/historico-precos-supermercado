@@ -1,6 +1,6 @@
-# Historico de Preços do Mercado
+# Historico de Preços do Supermercado
 
-[![Build and Deploy](https://github.com/fberanizo/historico-precos-mercado/actions/workflows/deploy.yml/badge.svg)](https://github.com/fberanizo/historico-precos-mercado/actions/workflows/deploy.yml)
+[![Build and Deploy](https://github.com/fberanizo/historico-precos-supermercado/actions/workflows/deploy.yml/badge.svg)](https://github.com/fberanizo/historico-precos-supermercado/actions/workflows/deploy.yml)
 
 ----
 
@@ -37,4 +37,4 @@ json["names"].filter(i => !isProduct(i));
 
 ## Acesso
 
-https://fberanizo.github.io/historico-precos-mercado/
+https://fberanizo.github.io/historico-precos-supermercado/
