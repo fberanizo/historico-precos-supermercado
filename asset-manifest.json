@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/historico-precos-supermercado/static/css/main.101ec5fc.css",
-    "main.js": "/historico-precos-supermercado/static/js/main.459943a8.js",
+    "main.js": "/historico-precos-supermercado/static/js/main.afb25a61.js",
     "static/js/787.e2a60b59.chunk.js": "/historico-precos-supermercado/static/js/787.e2a60b59.chunk.js",
     "index.html": "/historico-precos-supermercado/index.html",
     "main.101ec5fc.css.map": "/historico-precos-supermercado/static/css/main.101ec5fc.css.map",
-    "main.459943a8.js.map": "/historico-precos-supermercado/static/js/main.459943a8.js.map",
+    "main.afb25a61.js.map": "/historico-precos-supermercado/static/js/main.afb25a61.js.map",
     "787.e2a60b59.chunk.js.map": "/historico-precos-supermercado/static/js/787.e2a60b59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.101ec5fc.css",
-    "static/js/main.459943a8.js"
+    "static/js/main.afb25a61.js"
   ]
 }
