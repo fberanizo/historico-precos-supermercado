@@ -65,6 +65,15 @@ import j63 from '../../data/2022-09-29-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j64 from '../../data/2022-10-27-ROLDAO.json';
 import j65 from '../../data/2022-10-27-SUPERMERCADO-BIG-BOM-LTDA.json';
 import j66 from '../../data/2022-11-30-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j67 from '../../data/2023-01-28-ROLDAO.json';
+import j68 from '../../data/2023-02-27-ROLDAO.json';
+import j69 from '../../data/2023-03-30-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j70 from '../../data/2023-04-29-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j71 from '../../data/2023-06-02-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j72 from '../../data/2023-06-28-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j73 from '../../data/2023-08-30-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j74 from '../../data/2023-10-02-SUPERMERCADO-BIG-BOM-LTDA.json';
+import j75 from '../../data/2023-10-25-SUPERMERCADO-BIG-BOM-LTDA.json';
 
 const data = {
   '2018-07-20': j0,
@@ -134,6 +143,15 @@ const data = {
   '2022-10-27': j64,
   '2022-10-28': j65,
   '2022-11-30': j66,
+  '2023-01-28': j67,
+  '2023-02-27': j68,
+  '2023-03-30': j69,
+  '2023-04-29': j70,
+  '2023-06-02': j71,
+  '2023-06-28': j72,
+  '2023-08-30': j73,
+  '2023-10-02': j74,
+  '2023-10-25': j75,
 };
 
 export function fetchPrices(regex: string) {
