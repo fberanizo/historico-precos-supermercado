@@ -50,7 +50,7 @@ function Prices(props: {visible: boolean}) {
           },
         ]}
         layout={{
-          width: width! - drawerWidth ?? 1000,
+          width: Math.max(width! - drawerWidth ?? 1200, 1200),
           height: 960,
           title: {
             text: '',
